@@ -24,9 +24,9 @@ h4 {
 }
 
 img {
-    max-width: 1000px;
-    height: auto
-  }
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
 
 div#content {
     width: 50%;
@@ -39,13 +39,16 @@ div#header {
 }
 
 div#header2 {
-    width: 90%;
+    width: 50%;
     margin-top: -50;
     margin-left: 500;
     margin-bottom: -30;
 }
 
-img {
-    width: 100%;
-    margin: 0 auto 0 auto;
+div#sidebar {
+    width: 20%;
+    float: left;
+    margin-left: 20;
+    margin-top: -100;
 }
+
