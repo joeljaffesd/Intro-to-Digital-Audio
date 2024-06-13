@@ -1,0 +1,13 @@
+p {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 5em;
+}
+
+img {
+    max-width: 1000px;
+    height: auto
+  }

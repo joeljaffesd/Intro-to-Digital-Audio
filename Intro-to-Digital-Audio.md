@@ -13,9 +13,6 @@ Wax cylinders, an early recording medium
 </figcaption>
 </figure>
 
-
-
-
 [Electrification](https://en.wikipedia.org/wiki/Electrification) in the 20th century allowed for the representation of audio signals as changes of voltage in electric current, drastically changing many aspects of music. This included the invention of electric and electronic instruments, sound amplification, and effect processing. 
 
 Since the dawn of the 21st century, [digital computers](https://en.wikipedia.org/wiki/Computer) have become the standard tool for composition, recording, processing, and playback- nearly all music is touched by computers in some way. 
