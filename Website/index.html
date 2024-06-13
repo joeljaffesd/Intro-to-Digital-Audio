@@ -4,9 +4,14 @@
         <link rel="stylesheet" type="text/css" href="css/styling.css">
     </head>
     <body>
-        <h1> An Introduction to Digital Audio </h1> 
-
-       <p>What is audio? Moreover, what is sound? These are important questions to ask and answer if you study music.</p>
+       <div id="header">
+       <h1> An Introduction</h1>
+       </div>
+       <div id="header2">
+       <h1> to Digital Audio </h1>
+       </div>
+       <div id="content">
+       <h2>What is audio? Moreover, what is sound? These are important questions to ask and answer if you study music.</h2>
 
        <p><b>Music</b> is often defined as ordered <b>sound</b>, sound being perceivable changes in air pressure.</p>
 
@@ -40,11 +45,11 @@
         <p>Since the dawn of the 21st century, 
         <a href="https://en.wikipedia.org/wiki/Computer">digital computers</a> 
         have become the standard tool for composition, recording, processing, and playback-<br> 
-        nearly all music is touched by computers in some way.</p>
+        <b>nearly all music is touched by computers in some way.</b></p>
 
         <p>Despite this, curriculum in digital audio is underdeveloped in many university and high school music programs.</p>
 
-        <p>The goal of this document is to confer a basic understanding of the underlying theory behind digital audio, 
+        <p><b>The goal of this document</b> is to confer a basic understanding of the underlying theory behind digital audio, 
         as well as an understanding of the tools the medium makes available.</p> 
 
         <h2> Digital Audio Basics </h2>
@@ -125,14 +130,13 @@
 
         <h3> Basic operations </h3> 
 
-        <p>When transforming digital audio data, the two most common (and most basic) operations are <b>addition</b> and <b>multiplication</b>.</p>
+        <p>When transforming digital audio data, the two most fundamental operations are <b>addition</b> and <b>multiplication</b>.</p>
 
         <p>Adding two signals is equivalent to <a href="https://en.wikipedia.org/wiki/Audio_mixing_(recorded_music)">mixing</a> 
         in the analog domain.</p>
 
-        <p>To create a waveform that represents a song, the individual instrument tracks are added together.<br> 
-        Because the amplitude of audio signals should be limited to the range (-1, 1), 
-        tracks often have their individual amplitudes scaled before summation.<br>
+        <p>To create a waveform that represents a song, the individual instrument tracks are added together. Because the amplitude of audio signals should be limited to the range (-1, 1), 
+        tracks often have their individual amplitudes scaled before summation.
         This is done with multiplication.</p>
 
         <p>Multiplying every sample of an audio signal by a positive number less than 1 results in <a href="https://en.wikipedia.org/wiki/Attenuation">attenuation</a>, 
@@ -163,8 +167,8 @@
         <!--TODO: Add Images-->
 
         <p>Much early work in digital audio revolved not around the processing of recorded musical signals, 
-        but instead the synthesis of sounds from scratch.<br>
-        <b>Digital synthesis</b> remains an active field of research, as the possibilities it affords are nearly limitless.</p>
+        but instead the synthesis of sounds from scratch. <b>Digital synthesis</b> remains an active field of research, 
+        as the possibilities it affords are nearly limitless.</p>
 
         <p>Working from the principles of fourier analysis, 
         <a href="https://en.wikipedia.org/wiki/Additive_synthesis">additive synthesis</a> creates timbres through the addition of sine waves, 
@@ -174,8 +178,9 @@
         it is considered a computationally expensive technique that poses problems in the context of limited computing resources.</p>
 
         <p><a href="https://en.wikipedia.org/wiki/Frequency_modulation_synthesis">Frequency modulation synthesis</a> 
-        was developed as a computationally-inexpensive alternative to additive synthesis.<br>
-        It allows for the creation of many frequencies from as little as two oscillators, but is less intuitive to parameterize than additive synthesis.</p>
+        was developed as a computationally-inexpensive alternative to additive synthesis. 
+        It allows for the creation of many frequencies from as little as two oscillators, 
+        but is less intuitive to parameterize than additive synthesis.</p>
 
         <!--TODO: introduce sampling synthesis?-->
 
@@ -214,11 +219,14 @@
 
         <p>is one of the most widely used effects in audio.<br>
         By lowering the volume of loud sections on a track, 
-        the entire track's volume can be raised without fear of <a href="https://en.wikipedia.org/wiki/Clipping_(audio)">clipping</a>.<br> 
+        the entire track's volume can be raised without fear of <a href="https://en.wikipedia.org/wiki/Clipping_(audio)">clipping</a>.
         This allows for increased perceptual loudness, and creates consistency in a clip's volume.</p>
 
         <p>While compression is an essential tool in popular music, its overuse has created controversy in the music industry, 
         culminating in the <a href="https://en.wikipedia.org/wiki/Loudness_war#2000s">loudness war</a> of the early 2000s.</p>
+
+        <p>It is generally recommended to use compression subtly to sweeten sounds, 
+        rather than as an effect to transform their character.</p>
 
         <figure>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Metallica_My_Apocalypse_waveform.png/1596px-Metallica_My_Apocalypse_waveform.png" />
@@ -227,12 +235,10 @@
         </figcaption>
         </figure>
 
-        <p>It is generally recommended to use compression subtly to sweeten sounds, rather than as an effect to transform their character.</p>
-
         <h4> Time Effects, </h4> 
 
         <p>like digital filters, leverage memory of a signal's past values to create output samples.<br> 
-        Digital audio is optimal for this, because it is capable of nearly perfect recording, storage and playback of audio samples.<br> 
+        Digital audio is optimal for this, because it is capable of nearly perfect recording, storage and playback of audio samples.
         The first commercial digital audio devices were in fact time effects, made by <a href="https://en.wikipedia.org/wiki/Eventide,_Inc">Eventide Inc.</a> in the 1970s.</p> 
         
         <p><a href="https://en.wikipedia.org/wiki/Reverb_effect">Reverb</a> is a ubiquitous time effect that mimics the physical phenomenon of acoustic reflection, 
@@ -286,31 +292,72 @@
         <p>Another tool is <a href="https://en.wikipedia.org/wiki/Scorewriter">music notation software</a>, 
         which digitizes composition in 
         <a href="https://en.wikipedia.org/wiki/Musical_notation#Modern_staff_notation">staff notation</a>.<br> 
-        These programs allow for real-time playback of music as it is being written, and accepts input in the form of keyboard/mouse data or MIDI data.</p>
+        These programs allow for real-time playback of music as it is being written, 
+        and accept input in the form of keyboard/mouse data or MIDI data.</p>
 
         <figure>
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Musescore_4_Screenshot.png" />
         <figcaption>
-        <i>MuseScore</i>, a <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">free & open-source</a> music notation application 
+        <i>MuseScore</i>, 
+        a <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">free & open-source</a> 
+        music notation application 
         </figcaption>
         </figure>
 
-        - Audio Repair Tools 
-        - MIDI!!!
+        <!--TODO: introduce Audio Repair Tools and MIDI-->
 
         <h3> Analysis Tools </h3> 
-        - Music visualization (meters, spectrogram, ...?)
+
+       <p>Many digital audio tools involve <a href="https://en.wikipedia.org/wiki/Music_visualization">visualization</a>
+        of some kind. Usually these are tools for measuring aspects of an audio signal like volume, frequency content 
+        or <a href="https://en.wikipedia.org/wiki/Spatial_music">spatial image</a>, 
+        but sometimes audio visualization can be an artistic representation used to augment performance or playback.</p>
+
+        <p>Applications for designing these visualizations include 
+        <a href="https://en.wikipedia.org/wiki/TouchDesigner">TouchDesigner</a>,
+        <a href="https://cycling74.com/products/jitter">Jitter</a>, 
+        and <a href="https://en.wikipedia.org/wiki/MilkDrop">MilkDrop</a>. 
+        Their increasing prevalence in EDM performance has led to their designer's designation as 'VJs' or 'Visual Jockeys.'</p>
 
         <p><a href="https://en.wikipedia.org/wiki/Music_information_retrieval">Music information retrieval</a>
         is a subfield of <a href="https://en.wikipedia.org/wiki/Computer_audition">computer audition</a>
-        that studies how audio data maps to music cognition.<br>
-        It informs the generation of music using 
+        that studies how audio data maps to music cognition. It informs the generation of music using 
         <a href="https://en.wikipedia.org/wiki/Music_and_artificial_intelligence">artificial intelligence</a>, 
-        and allows for categorization of digital audio by markers such as tempo, key, mood, and even genre.<br>
-        By mapping the conventions of a music system such as 
+        and allows for categorization of digital audio by markers such as tempo, key, mood, and even genre.</p>
+        
+        <p>By mapping the conventions of a music system such as 
         <a href="https://en.wikipedia.org/wiki/Tonality">tonal harmony</a> to audio data, 
-        music conforming to that system can be generated by <a href="https://en.wikipedia.org/wiki/Algorithm">algorithmically</a>.</p>
+        music conforming to that system can be generated <a href="https://en.wikipedia.org/wiki/Algorithm">algorithmically</a>.</p>
 
         <h2> Conclusion </h2> 
+        <p>While digital audio is a field of such breadth and depth that it takes a lifetime to master,
+        I hope that this brief document can at least provide a solid enough introduction 
+        to have readers asking the right questions.</p>
+
+        <p>If you are interested in learning more about digital audio, 
+        the following resources are recommended as next steps:</p>
+
+        <p>
+        <a href="https://msp.ucsd.edu/techniques.htm">The Theory and Technique of Electronic Music - Miller Puckette</a>
+        </p>
+
+        <p>
+        <a href="https://doi.org/10.2307/3680137">An Introduction to the Mathematics of Digital Signal Processing: 
+        Part I: Algebra, Trigonometry, and the Most Beautiful Formula in Mathematics - F. R. Moore</a>
+        </p>
+
+        <p>
+        <a href="https://itconnect.uw.edu/tools-services-support/teaching-learning/workshops/online-tutorials/digital-audio-online-curriculum/">
+        UW Digital Audio Online Tutorials</a> 
+        </p>
+        <p>
+        <a href="https://music.arts.uci.edu/dobrian/maxcookbook/">UCI Max Cookbook</a>
+        </p>
+
+        <p>
+        <a href="https://www.youtube.com/@TheAudioProgrammer">The Audio Programmer YouTube Channel</a>
+        </p>
+
+        </div>
     </body>
 </html>

@@ -1,13 +1,50 @@
 p {
     font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: large;
 }
 
 h1 {
     font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 5em;
+    font-size: 500%;
+}
+
+h2 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 200%;
+}
+
+h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 175%;
+}
+
+h4 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 130%;
 }
 
 img {
     max-width: 1000px;
     height: auto
   }
+
+div#content {
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+div#header {
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+div#header2 {
+    width: 90%;
+    margin-top: -50;
+    margin-left: 500;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
