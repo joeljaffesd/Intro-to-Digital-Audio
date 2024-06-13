@@ -38,13 +38,13 @@
 
         <p><a href="https://en.wikipedia.org/wiki/Electrification">Electrification</a> 
         in the 20th century allowed for the representation of audio signals as changes of voltage in electric current, 
-        drastically changing many aspects of music.</p>
-
-        <p>This included the invention of electric and electronic instruments, sound amplification, and effect processing.</p> 
+        drastically changing many aspects of music. 
+        This included the invention of electric and electronic instruments, 
+        sound amplification, and effect processing.</p> 
 
         <p>Since the dawn of the 21st century, 
         <a href="https://en.wikipedia.org/wiki/Computer">digital computers</a> 
-        have become the standard tool for composition, recording, processing, and playback-<br> 
+        have become the standard tool for composition, recording, processing, and playback- 
         <b>nearly all music is touched by computers in some way.</b></p>
 
         <p>Despite this, curriculum in digital audio is underdeveloped in many university and high school music programs.</p>
@@ -60,9 +60,8 @@
 
         <p>The fundamental hurdle was how to represent <a href="https://en.wikipedia.org/wiki/Continuous_function">continuous</a> data 
         as <a href="https://en.wikipedia.org/wiki/Discrete_mathematics">discrete</a> data, 
-        the only kind a digital computer can operate on.</p> 
-
-        <p>The answer was found in <a href="https://en.wikipedia.org/wiki/Sampling_(signal_processing)">sampling</a>.</p>
+        the only kind a digital computer can operate on. 
+        The answer was found in <a href="https://en.wikipedia.org/wiki/Sampling_(signal_processing)">sampling</a>.</p>
 
         <p>You may know that the illusion of continuous motion in a film is created by the rapid playback of still images known as <i>frames</i>. 
         Audio sampling operates on the same principal.</p>
@@ -112,9 +111,8 @@
         one of the most important algorithms in signal processing.</p>
 
         <p>In the 18th century, mathematician <a href="https://en.wikipedia.org/wiki/Joseph_Fourier">Joseph Fourier</a> 
-        proposed that any signal can be represented as a series of sinusoidal frequencies summed in different proportions.</p>
-
-        <p>By computing the fourier transform and graphing time on the x-axis, 
+        proposed that any signal can be represented as a series of sinusoidal frequencies summed in different proportions.
+        By computing the fourier transform and graphing time on the x-axis, 
         frequency on the y-axis, 
         and the amplitude of each frequency component as color, 
         a <b>frequency domain</b> representation called a <b>spectrogram</b> can be created.</p>
@@ -128,19 +126,28 @@
         </figcaption>
         </figure>
 
-        <h3> Basic operations </h3> 
+        <h3> Basic Operations </h3> 
 
-        <p>When transforming digital audio data, the two most fundamental operations are <b>addition</b> and <b>multiplication</b>.</p>
+        <p>When working with digital audio data, 
+        the two most fundamental operations are <b>addition</b> and <b>multiplication</b>.</p>
 
         <p>Adding two signals is equivalent to <a href="https://en.wikipedia.org/wiki/Audio_mixing_(recorded_music)">mixing</a> 
-        in the analog domain.</p>
+        in the analog domain. To create a waveform that represents a song, 
+        the individual instrument tracks are added together.</p>
 
-        <p>To create a waveform that represents a song, the individual instrument tracks are added together. Because the amplitude of audio signals should be limited to the range (-1, 1), 
-        tracks often have their individual amplitudes scaled before summation.
-        This is done with multiplication.</p>
+        <p>Addition is also the basis of digital 
+        <a href="https://en.wikipedia.org/wiki/Electronic_oscillator">oscillators</a>,
+        an essential building block of audio synthesis. 
+        A digital oscillator adds to a phase value at each timestep, 
+        and resets it when a specified maximum value is reached.</p>
 
-        <p>Multiplying every sample of an audio signal by a positive number less than 1 results in <a href="https://en.wikipedia.org/wiki/Attenuation">attenuation</a>, 
-        essentially the reduction of a signal's volume.</p>
+        <p> Multiplication scales the volume of samples. 
+        Multiplying every sample of an audio signal by a positive number less than 1 results in 
+        <a href="https://en.wikipedia.org/wiki/Attenuation">attenuation</a>, 
+        essentially the reduction of a signal's volume. 
+        Multiplying a signal's amplitude values by a number greater than 1 represents 
+        <a href="https://en.wikipedia.org/wiki/Amplifier">amplification</a>, 
+        an increase in volume.</p>
 
         <figure>
         <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231116161709/Attenuation-in-a-signal-660.png"/>
@@ -148,9 +155,6 @@
         A visual depiction of attenuation 
         </figcaption>
         </figure>
-
-        <p>Multiplying a signal's amplitude values by a number greater than 1 represents <a href="https://en.wikipedia.org/wiki/Amplifier">amplification</a>, 
-        an increase in volume.</p>
 
         <figure>
         <img src="https://www.eeeguide.com/wp-content/uploads/2022/11/Class-A-Power-Amplifiers-Direct-Coupled-with-Resistive-Load-18.jpg"/>
@@ -160,7 +164,8 @@
         </figure>
 
         <p>As shown in the effects section, 
-        more complicated transformations are made by chaining together many simple addition and multiplication operations.</p>
+        more complicated transformations are made by chaining together many simple addition 
+        and multiplication operations.</p>
 
         <h3> Synthesis </h3> 
 
@@ -181,8 +186,6 @@
         was developed as a computationally-inexpensive alternative to additive synthesis. 
         It allows for the creation of many frequencies from as little as two oscillators, 
         but is less intuitive to parameterize than additive synthesis.</p>
-
-        <!--TODO: introduce sampling synthesis?-->
 
         <p>Less prevalent but equally interesting techniques include <a href="https://en.wikipedia.org/wiki/Physical_modelling_synthesis">physical modeling</a>, 
         <a href="https://en.wikipedia.org/wiki/Subtractive_synthesis">subtractive</a>, 
