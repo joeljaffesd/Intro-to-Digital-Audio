@@ -1,6 +1,6 @@
 p {
     font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: large;
+    font-size: 120%;
 }
 
 h1 {
@@ -42,6 +42,7 @@ div#header2 {
     width: 90%;
     margin-top: -50;
     margin-left: 500;
+    margin-bottom: -30;
 }
 
 img {
