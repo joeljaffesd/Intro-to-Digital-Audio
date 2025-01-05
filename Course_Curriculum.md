@@ -12,8 +12,8 @@
   - Filters: One-Pole and One-Zero (IIR vs. FIR)
   - Filters: Classic Designs (Biquad, SVF)  
 - Week 5 
-  - Delay: Basic Formula & Feedback
-  - Delay: Modulation
+  - Delay: Basic Formula & Feedback Effect
+  - Delay: Modulation (Flanger, Chorus, and Pitch Shifting)
 - Week 6
   - Reverb: History of Techniques
   - Reverb: Digital Implementation
